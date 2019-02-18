@@ -2,7 +2,7 @@
 
 namespace Xamarin.Forms.Fluent
 {
-    public static class LayoutExtensions
+    public static partial class LayoutExtensions
     {
         public static TLayout SetChildren<TLayout>(this TLayout self, params View[] views) where TLayout : Layout<View>
         {

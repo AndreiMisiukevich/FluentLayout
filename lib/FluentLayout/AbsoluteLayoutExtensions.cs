@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Fluent
         All = ~0
     }
 
-    public static class AbsoluteLayoutExtensions
+    public static partial class AbsoluteLayoutExtensions
     {
         public static TView SetAbsoluteLayoutFlags<TView>(this TView view, AbsoluteLayoutFlags flags) where TView : BindableObject
         {

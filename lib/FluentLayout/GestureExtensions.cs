@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Xamarin.Forms.Fluent
 {
-    public static class GestureExtensions
+    public static partial class GestureExtensions
     {
         public static TView BindTap<TView>(this TView view, string propName, object param = null) where TView : View
         {

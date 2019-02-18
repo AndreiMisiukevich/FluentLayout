@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Xamarin.Forms.Fluent
 {
-    public static class BindableObjectExtensions
+    public static partial class BindableObjectExtensions
     {
         public static TBindable Do<TBindable>(this TBindable self, Action<TBindable> action)
         {
