@@ -75,6 +75,7 @@ namespace Xamarin.Forms.Fluent
                 .GetTypes()
                 .Where(t => t.IsSubclassOf(bindableObjType) || t == bindableObjType)
                 .Where(t => !t.IsGenericType);
+            
 
             foreach(var type in formsTypes)
             {
