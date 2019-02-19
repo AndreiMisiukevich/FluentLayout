@@ -3,14 +3,27 @@ namespace Xamarin.Forms.Fluent
 {
     public static partial class BindableObjectExtensions
     {
-        public static TBindable Do<TBindable>(this TBindable self, Action<TBindable> action)
+        public static TBindable As<TBindable>(this BindableObject self) where TBindable : BindableObject
+            => self as TBindable;
+
+        public static TBindable Do<TBindable>(this TBindable self,
+            Action<TBindable> action) where TBindable : BindableObject
         {
             action?.Invoke(self);
             return self;
         }
 
+        public static TBindable Set<TBindable>(this TBindable self,
+            BindableProperty targetProperty,
+            object value) where TBindable : BindableObject
+        {
+            self.SetValue(targetProperty, value);
+            return self;
+        }
+
         public static TBindable Bind<TBindable>(this TBindable self,
-            BindableProperty targetProperty, string path,
+            BindableProperty targetProperty, 
+            string path,
             BindingMode mode = BindingMode.Default,
             IValueConverter converter = null,
             object converterParameter = null,

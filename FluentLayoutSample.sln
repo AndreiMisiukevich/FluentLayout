@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{D853CFA5-BC1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentLayout", "lib\FluentLayout\FluentLayout.csproj", "{B6114575-AA5D-4275-94D4-84D338FF1B9A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gen", "gen", "{A7C88926-1C55-4662-8294-2C54B65D2BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentCodegen", "gen\FluentCodegen\FluentCodegen.csproj", "{2477A684-0BED-48EE-AABF-5F858E283E7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,8 +91,25 @@ Global
 		{B6114575-AA5D-4275-94D4-84D338FF1B9A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{B6114575-AA5D-4275-94D4-84D338FF1B9A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
 		{B6114575-AA5D-4275-94D4-84D338FF1B9A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Release|iPhone.Build.0 = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{2477A684-0BED-48EE-AABF-5F858E283E7D}.AppStore|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B6114575-AA5D-4275-94D4-84D338FF1B9A} = {D853CFA5-BC1F-4698-896C-ACF1156E7513}
+		{2477A684-0BED-48EE-AABF-5F858E283E7D} = {A7C88926-1C55-4662-8294-2C54B65D2BBB}
 	EndGlobalSection
 EndGlobal
