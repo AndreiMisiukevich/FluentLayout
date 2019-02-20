@@ -38,7 +38,4 @@
     <Compile Remove="Codegen\TemplatedViewExtensions.codegen.cs" />
     <Compile Remove="Codegen\TimePickerExtensions.codegen.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Remove="FluentLayoutTests\obj\Debug\FluentLayoutTests.csproj.CopyComplete" />
-  </ItemGroup>
 </Project>
