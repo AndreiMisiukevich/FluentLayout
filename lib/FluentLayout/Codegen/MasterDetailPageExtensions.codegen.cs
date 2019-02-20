@@ -7,6 +7,166 @@ namespace Xamarin.Forms.Fluent
     public static partial class MasterDetailPageExtensions
     {
 
+
+        public static TBindable SetIsPresentedChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.IsPresentedChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBackButtonPressedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.BackButtonPressedEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.BackButtonPressed += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetLayoutChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.LayoutChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetAppearingEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.Appearing += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDisappearingEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.Disappearing += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : MasterDetailPage
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : MasterDetailPage
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
         
         public static TBindable BindIsGestureEnabledMasterDetailPage<TBindable>(this TBindable self,
             string path,

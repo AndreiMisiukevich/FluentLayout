@@ -7,6 +7,134 @@ namespace Xamarin.Forms.Fluent
     public static partial class DatePickerExtensions
     {
 
+
+        public static TBindable SetDateSelectedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.DateChangedEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.DateSelected += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : DatePicker
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : DatePicker
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : DatePicker
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
         
         public static TBindable BindFormatDatePicker<TBindable>(this TBindable self,
             string path,

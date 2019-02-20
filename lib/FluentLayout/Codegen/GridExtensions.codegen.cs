@@ -7,6 +7,134 @@ namespace Xamarin.Forms.Fluent
     public static partial class GridExtensions
     {
 
+
+        public static TBindable SetLayoutChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Grid
+        {
+            self.LayoutChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Grid
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Grid
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Grid
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Grid
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Grid
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : Grid
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : Grid
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Grid
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Grid
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Grid
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Grid
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Grid
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : Grid
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Grid
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : Grid
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
         
         public static TBindable BindRowGrid<TBindable>(this TBindable self,
             string path,

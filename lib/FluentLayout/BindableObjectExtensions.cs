@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection;
+
 namespace Xamarin.Forms.Fluent
 {
     public static partial class BindableObjectExtensions
@@ -21,8 +23,18 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
+        public static TBindable SetEventHandler<TBindable>(this TBindable self,
+            EventInfo eventInfo,
+            EventHandler handlerAction) where TBindable : Button
+        {
+            self.Clicked += handlerAction;
+
+            return self;
+        }
+
+
         public static TBindable Bind<TBindable>(this TBindable self,
-            BindableProperty targetProperty, 
+            BindableProperty targetProperty,
             string path,
             BindingMode mode = BindingMode.Default,
             IValueConverter converter = null,

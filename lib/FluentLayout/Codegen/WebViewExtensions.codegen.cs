@@ -7,6 +7,174 @@ namespace Xamarin.Forms.Fluent
     public static partial class WebViewExtensions
     {
 
+
+        public static TBindable SetNavigatedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.WebNavigatedEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Navigated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetNavigatingEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.WebNavigatingEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Navigating += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetEvalRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EvalRequested> handlerAction) where TBindable : WebView
+        {
+            self.EvalRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetEvaluateJavaScriptRequestedEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.Internals.EvaluateJavaScriptDelegate handlerAction) where TBindable : WebView
+        {
+            self.EvaluateJavaScriptRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetGoBackRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.GoBackRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetGoForwardRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.GoForwardRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : WebView
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : WebView
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : WebView
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : WebView
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
         
         public static TBindable BindSourceWebView<TBindable>(this TBindable self,
             string path,

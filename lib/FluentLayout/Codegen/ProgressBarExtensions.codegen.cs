@@ -7,6 +7,126 @@ namespace Xamarin.Forms.Fluent
     public static partial class ProgressBarExtensions
     {
 
+
+        public static TBindable SetChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : ProgressBar
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ProgressBar
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : ProgressBar
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
         
         public static TBindable BindProgressColorProgressBar<TBindable>(this TBindable self,
             string path,

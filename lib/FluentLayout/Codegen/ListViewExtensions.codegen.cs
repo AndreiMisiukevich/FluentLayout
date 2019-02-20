@@ -7,6 +7,174 @@ namespace Xamarin.Forms.Fluent
     public static partial class ListViewExtensions
     {
 
+
+        public static TBindable SetItemAppearingEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ItemVisibilityEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ItemAppearing += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetItemDisappearingEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ItemVisibilityEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ItemDisappearing += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetItemSelectedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.SelectedItemChangedEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ItemSelected += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetItemTappedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ItemTappedEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ItemTapped += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetRefreshingEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ListView
+        {
+            self.Refreshing += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetScrollToRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ScrollToRequestedEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ScrollToRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ListView
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ListView
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ListView
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : ListView
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : ListView
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ListView
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ListView
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : ListView
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ListView
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable SetPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : ListView
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
         
         public static TBindable BindIsPullToRefreshEnabledListView<TBindable>(this TBindable self,
             string path,
