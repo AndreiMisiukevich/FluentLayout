@@ -56,12 +56,21 @@ namespace Xamarin.Forms.Fluent
         public static TBindable {0}<TBindable>(this TBindable bindable, {3} value) where TBindable : BindableObject
             => bindable.Set({2}.{1}, value);";
 
-        private const string SetEventMethodTemplate = @"
+        private const string WithEventMethodTemplate = @"
 
-        public static TBindable Set{0}Event<TBindable>(this TBindable self,
+        public static TBindable With{0}Event<TBindable>(this TBindable self,
             {2} handlerAction) where TBindable : {1}
         {{
             self.{0} += handlerAction;
+
+            return self;
+        }}";
+
+        private const string ClearEventHandlersMethodTemplate = @"
+
+        public static TBindable Clear{0}EventHandlers<TBindable>(this TBindable self) where TBindable : {1}
+        {{
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, ""{0}"");
 
             return self;
         }}";
@@ -155,7 +164,8 @@ namespace Xamarin.Forms.Fluent
                     {
                         string eventHandlerType = ToReadableString(e.EventHandlerType);
 
-                        methodsBuilder.Append(string.Format(SetEventMethodTemplate, e.Name, type.Name, eventHandlerType));
+                        methodsBuilder.Append(string.Format(WithEventMethodTemplate, e.Name, type.Name, eventHandlerType));
+                        methodsBuilder.Append(string.Format(ClearEventHandlersMethodTemplate, e.Name, type.Name));
                     }
                 }
             }
