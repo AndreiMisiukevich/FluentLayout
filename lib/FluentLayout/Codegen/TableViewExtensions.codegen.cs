@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithModelChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewModelChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : TableView
         {
             self.ModelChanged += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearModelChangedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewModelChangedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ModelChanged");
 
             return self;
         }
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : TableView
         {
             self.ChildrenReordered += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : TableView
         {
             self.Focused += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewFocusedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : TableView
         {
             self.MeasureInvalidated += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : TableView
         {
             self.SizeChanged += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : TableView
         {
             self.Unfocused += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : TableView
         {
             self.BatchCommitted += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : TableView
         {
             self.FocusChangeRequested += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : TableView
         {
             self.ChildAdded += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewChildAddedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : TableView
         {
             self.ChildRemoved += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : TableView
         {
             self.DescendantAdded += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : TableView
         {
             self.DescendantRemoved += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewPlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : TableView
         {
             self.PlatformSet += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewPropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : TableView
         {
             self.PropertyChanged += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : TableView
         {
             self.BindingContextChanged += handlerAction;
@@ -226,14 +226,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithTableViewPropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : TableView
         {
             self.PropertyChanging += handlerAction;
@@ -241,7 +241,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : TableView
+        public static TBindable ClearTableViewPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : TableView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 

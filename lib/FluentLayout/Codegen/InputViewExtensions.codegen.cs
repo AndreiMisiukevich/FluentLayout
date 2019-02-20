@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : InputView
         {
             self.ChildrenReordered += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : InputView
         {
             self.Focused += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewFocusedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : InputView
         {
             self.MeasureInvalidated += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : InputView
         {
             self.SizeChanged += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : InputView
         {
             self.Unfocused += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : InputView
         {
             self.BatchCommitted += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : InputView
         {
             self.FocusChangeRequested += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : InputView
         {
             self.ChildAdded += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewChildAddedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : InputView
         {
             self.ChildRemoved += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : InputView
         {
             self.DescendantAdded += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : InputView
         {
             self.DescendantRemoved += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewPlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : InputView
         {
             self.PlatformSet += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewPropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : InputView
         {
             self.PropertyChanged += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : InputView
         {
             self.BindingContextChanged += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithInputViewPropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : InputView
         {
             self.PropertyChanging += handlerAction;
@@ -226,7 +226,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : InputView
+        public static TBindable ClearInputViewPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : InputView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 

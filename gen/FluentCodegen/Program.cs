@@ -58,7 +58,7 @@ namespace Xamarin.Forms.Fluent
 
         private const string WithEventMethodTemplate = @"
 
-        public static TBindable With{0}Event<TBindable>(this TBindable self,
+        public static TBindable With{1}{0}Event<TBindable>(this TBindable self,
             {2} handlerAction) where TBindable : {1}
         {{
             self.{0} += handlerAction;
@@ -68,7 +68,7 @@ namespace Xamarin.Forms.Fluent
 
         private const string ClearEventHandlersMethodTemplate = @"
 
-        public static TBindable Clear{0}EventHandlers<TBindable>(this TBindable self) where TBindable : {1}
+        public static TBindable Clear{1}{0}Handlers<TBindable>(this TBindable self) where TBindable : {1}
         {{
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, ""{0}"");
 

@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithScrolledEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewScrolledEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ScrolledEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.Scrolled += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearScrolledEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewScrolledHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Scrolled");
 
             return self;
         }
 
-        public static TBindable WithScrollToRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewScrollToRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ScrollToRequestedEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.ScrollToRequested += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearScrollToRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewScrollToRequestedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ScrollToRequested");
 
             return self;
         }
 
-        public static TBindable WithLayoutChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewLayoutChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : ScrollView
         {
             self.LayoutChanged += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearLayoutChangedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewLayoutChangedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "LayoutChanged");
 
             return self;
         }
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : ScrollView
         {
             self.ChildrenReordered += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.Focused += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewFocusedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : ScrollView
         {
             self.MeasureInvalidated += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : ScrollView
         {
             self.SizeChanged += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.Unfocused += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : ScrollView
         {
             self.BatchCommitted += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : ScrollView
         {
             self.FocusChangeRequested += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.ChildAdded += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewChildAddedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.ChildRemoved += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.DescendantAdded += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ScrollView
         {
             self.DescendantRemoved += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewPlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : ScrollView
         {
             self.PlatformSet += handlerAction;
@@ -226,14 +226,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewPropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : ScrollView
         {
             self.PropertyChanged += handlerAction;
@@ -241,14 +241,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : ScrollView
         {
             self.BindingContextChanged += handlerAction;
@@ -256,14 +256,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithScrollViewPropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : ScrollView
         {
             self.PropertyChanging += handlerAction;
@@ -271,7 +271,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
+        public static TBindable ClearScrollViewPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : ScrollView
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 

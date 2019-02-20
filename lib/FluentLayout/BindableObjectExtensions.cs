@@ -23,16 +23,6 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable SetEventHandler<TBindable>(this TBindable self,
-            EventInfo eventInfo,
-            EventHandler handlerAction) where TBindable : Button
-        {
-            self.Clicked += handlerAction;
-
-            return self;
-        }
-
-
         public static TBindable Bind<TBindable>(this TBindable self,
             BindableProperty targetProperty,
             string path,

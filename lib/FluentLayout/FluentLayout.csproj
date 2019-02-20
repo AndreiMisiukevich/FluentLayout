@@ -30,5 +30,15 @@
     <Compile Remove="Codegen\FileImageSourceExtensions.codegen.cs" />
     <Compile Remove="Codegen\ActivityIndicatorExtensions.codegen.cs" />
     <Compile Remove="Codegen\AbsoluteLayoutExtensions.codegen.cs" />
+    <Compile Remove="Codegen\AbsoluteLayoutExtensions.codegen.cs" />
+    <Compile Remove="Codegen\ActivityIndicatorExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TableViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TapGestureRecognizerExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TemplatedPageExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TemplatedViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TimePickerExtensions.codegen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="FluentLayoutTests\obj\Debug\FluentLayoutTests.csproj.CopyComplete" />
   </ItemGroup>
 </Project>

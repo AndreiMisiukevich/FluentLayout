@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithLayoutChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutLayoutChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.LayoutChanged += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearLayoutChangedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutLayoutChangedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "LayoutChanged");
 
             return self;
         }
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.ChildrenReordered += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.Focused += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutFocusedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.MeasureInvalidated += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.SizeChanged += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.Unfocused += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : RelativeLayout
         {
             self.BatchCommitted += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.FocusChangeRequested += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.ChildAdded += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutChildAddedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.ChildRemoved += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.DescendantAdded += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : RelativeLayout
         {
             self.DescendantRemoved += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutPlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.PlatformSet += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutPropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.PropertyChanged += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.BindingContextChanged += handlerAction;
@@ -226,14 +226,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithRelativeLayoutPropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : RelativeLayout
         {
             self.PropertyChanging += handlerAction;
@@ -241,7 +241,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
+        public static TBindable ClearRelativeLayoutPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : RelativeLayout
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 

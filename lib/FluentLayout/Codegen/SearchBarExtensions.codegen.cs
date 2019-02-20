@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithSearchButtonPressedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarSearchButtonPressedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : SearchBar
         {
             self.SearchButtonPressed += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSearchButtonPressedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarSearchButtonPressedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SearchButtonPressed");
 
             return self;
         }
 
-        public static TBindable WithTextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarTextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.TextChangedEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.TextChanged += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearTextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarTextChangedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "TextChanged");
 
             return self;
         }
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : SearchBar
         {
             self.ChildrenReordered += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.Focused += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarFocusedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : SearchBar
         {
             self.MeasureInvalidated += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : SearchBar
         {
             self.SizeChanged += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.Unfocused += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : SearchBar
         {
             self.BatchCommitted += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : SearchBar
         {
             self.FocusChangeRequested += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.ChildAdded += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarChildAddedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.ChildRemoved += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.DescendantAdded += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : SearchBar
         {
             self.DescendantRemoved += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarPlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : SearchBar
         {
             self.PlatformSet += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarPropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : SearchBar
         {
             self.PropertyChanged += handlerAction;
@@ -226,14 +226,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : SearchBar
         {
             self.BindingContextChanged += handlerAction;
@@ -241,14 +241,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithSearchBarPropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : SearchBar
         {
             self.PropertyChanging += handlerAction;
@@ -256,7 +256,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
+        public static TBindable ClearSearchBarPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : SearchBar
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 

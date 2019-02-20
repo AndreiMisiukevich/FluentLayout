@@ -15,4 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\lib\FluentLayout\FluentLayout.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyPage.cs" />
+  </ItemGroup>
 </Project>

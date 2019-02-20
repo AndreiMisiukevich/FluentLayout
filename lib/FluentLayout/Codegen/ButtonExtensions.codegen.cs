@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithClickedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonClickedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.Clicked += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearClickedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonClickedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Clicked");
 
             return self;
         }
 
-        public static TBindable WithPressedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonPressedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.Pressed += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPressedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonPressedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Pressed");
 
             return self;
         }
 
-        public static TBindable WithReleasedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonReleasedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.Released += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearReleasedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonReleasedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Released");
 
             return self;
         }
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.ChildrenReordered += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Button
         {
             self.Focused += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonFocusedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.MeasureInvalidated += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.SizeChanged += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Button
         {
             self.Unfocused += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : Button
         {
             self.BatchCommitted += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : Button
         {
             self.FocusChangeRequested += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Button
         {
             self.ChildAdded += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonChildAddedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Button
         {
             self.ChildRemoved += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Button
         {
             self.DescendantAdded += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Button
         {
             self.DescendantRemoved += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonPlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.PlatformSet += handlerAction;
@@ -226,14 +226,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonPropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : Button
         {
             self.PropertyChanged += handlerAction;
@@ -241,14 +241,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : Button
         {
             self.BindingContextChanged += handlerAction;
@@ -256,14 +256,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithButtonPropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : Button
         {
             self.PropertyChanging += handlerAction;
@@ -271,7 +271,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : Button
+        public static TBindable ClearButtonPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : Button
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 

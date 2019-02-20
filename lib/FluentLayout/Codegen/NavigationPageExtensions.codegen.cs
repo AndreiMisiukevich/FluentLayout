@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Fluent
     {
 
 
-        public static TBindable WithPoppedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePoppedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.NavigationEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.Popped += handlerAction;
@@ -16,14 +16,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPoppedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePoppedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Popped");
 
             return self;
         }
 
-        public static TBindable WithPoppedToRootEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePoppedToRootEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.NavigationEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.PoppedToRoot += handlerAction;
@@ -31,14 +31,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPoppedToRootEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePoppedToRootHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PoppedToRoot");
 
             return self;
         }
 
-        public static TBindable WithPushedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePushedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.NavigationEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.Pushed += handlerAction;
@@ -46,14 +46,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPushedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePushedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Pushed");
 
             return self;
         }
 
-        public static TBindable WithInsertPageBeforeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageInsertPageBeforeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.NavigationRequestedEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.InsertPageBeforeRequested += handlerAction;
@@ -61,14 +61,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearInsertPageBeforeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageInsertPageBeforeRequestedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "InsertPageBeforeRequested");
 
             return self;
         }
 
-        public static TBindable WithPopRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePopRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.NavigationRequestedEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.PopRequested += handlerAction;
@@ -76,14 +76,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPopRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePopRequestedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PopRequested");
 
             return self;
         }
 
-        public static TBindable WithPopToRootRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePopToRootRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.NavigationRequestedEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.PopToRootRequested += handlerAction;
@@ -91,14 +91,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPopToRootRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePopToRootRequestedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PopToRootRequested");
 
             return self;
         }
 
-        public static TBindable WithPushRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePushRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.NavigationRequestedEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.PushRequested += handlerAction;
@@ -106,14 +106,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPushRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePushRequestedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PushRequested");
 
             return self;
         }
 
-        public static TBindable WithRemovePageRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageRemovePageRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.NavigationRequestedEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.RemovePageRequested += handlerAction;
@@ -121,14 +121,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearRemovePageRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageRemovePageRequestedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "RemovePageRequested");
 
             return self;
         }
 
-        public static TBindable WithLayoutChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageLayoutChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.LayoutChanged += handlerAction;
@@ -136,14 +136,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearLayoutChangedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageLayoutChangedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "LayoutChanged");
 
             return self;
         }
 
-        public static TBindable WithAppearingEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageAppearingEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.Appearing += handlerAction;
@@ -151,14 +151,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearAppearingEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageAppearingHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Appearing");
 
             return self;
         }
 
-        public static TBindable WithDisappearingEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageDisappearingEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.Disappearing += handlerAction;
@@ -166,14 +166,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDisappearingEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageDisappearingHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Disappearing");
 
             return self;
         }
 
-        public static TBindable WithChildrenReorderedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageChildrenReorderedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.ChildrenReordered += handlerAction;
@@ -181,14 +181,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildrenReorderedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
 
             return self;
         }
 
-        public static TBindable WithFocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageFocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.Focused += handlerAction;
@@ -196,14 +196,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageFocusedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
 
             return self;
         }
 
-        public static TBindable WithMeasureInvalidatedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageMeasureInvalidatedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.MeasureInvalidated += handlerAction;
@@ -211,14 +211,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearMeasureInvalidatedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
 
             return self;
         }
 
-        public static TBindable WithSizeChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageSizeChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.SizeChanged += handlerAction;
@@ -226,14 +226,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearSizeChangedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
 
             return self;
         }
 
-        public static TBindable WithUnfocusedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageUnfocusedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.Unfocused += handlerAction;
@@ -241,14 +241,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearUnfocusedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
 
             return self;
         }
 
-        public static TBindable WithBatchCommittedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageBatchCommittedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : NavigationPage
         {
             self.BatchCommitted += handlerAction;
@@ -256,14 +256,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBatchCommittedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
 
             return self;
         }
 
-        public static TBindable WithFocusChangeRequestedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageFocusChangeRequestedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : NavigationPage
         {
             self.FocusChangeRequested += handlerAction;
@@ -271,14 +271,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearFocusChangeRequestedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
 
             return self;
         }
 
-        public static TBindable WithChildAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageChildAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.ChildAdded += handlerAction;
@@ -286,14 +286,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildAddedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageChildAddedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
 
             return self;
         }
 
-        public static TBindable WithChildRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageChildRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.ChildRemoved += handlerAction;
@@ -301,14 +301,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearChildRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
 
             return self;
         }
 
-        public static TBindable WithDescendantAddedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageDescendantAddedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.DescendantAdded += handlerAction;
@@ -316,14 +316,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantAddedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
 
             return self;
         }
 
-        public static TBindable WithDescendantRemovedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageDescendantRemovedEvent<TBindable>(this TBindable self,
             System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : NavigationPage
         {
             self.DescendantRemoved += handlerAction;
@@ -331,14 +331,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearDescendantRemovedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
 
             return self;
         }
 
-        public static TBindable WithPlatformSetEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePlatformSetEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.PlatformSet += handlerAction;
@@ -346,14 +346,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPlatformSetEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePlatformSetHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePropertyChangedEvent<TBindable>(this TBindable self,
             System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : NavigationPage
         {
             self.PropertyChanged += handlerAction;
@@ -361,14 +361,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
 
             return self;
         }
 
-        public static TBindable WithBindingContextChangedEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPageBindingContextChangedEvent<TBindable>(this TBindable self,
             System.EventHandler handlerAction) where TBindable : NavigationPage
         {
             self.BindingContextChanged += handlerAction;
@@ -376,14 +376,14 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearBindingContextChangedEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPageBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
 
             return self;
         }
 
-        public static TBindable WithPropertyChangingEvent<TBindable>(this TBindable self,
+        public static TBindable WithNavigationPagePropertyChangingEvent<TBindable>(this TBindable self,
             Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : NavigationPage
         {
             self.PropertyChanging += handlerAction;
@@ -391,7 +391,7 @@ namespace Xamarin.Forms.Fluent
             return self;
         }
 
-        public static TBindable ClearPropertyChangingEventHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
+        public static TBindable ClearNavigationPagePropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : NavigationPage
         {
             Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
 
