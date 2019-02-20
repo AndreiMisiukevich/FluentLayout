@@ -19,6 +19,7 @@ namespace FluentLayoutSample
         public ICommand ClickCommand => _clickCommand ?? (_clickCommand = new Command(() =>
         {
             Text = Path.GetRandomFileName();
+            this.Label = "Button clicked";
         }));
 
         private string _text;
@@ -39,6 +40,17 @@ namespace FluentLayoutSample
             set
             {
                 _buttonTitle = value;
+                OnPropChanged();
+            }
+        }
+
+        private string _label = "Initial Text";
+        public string Label
+        {
+            get => _label;
+            set
+            {
+                _label = value;
                 OnPropChanged();
             }
         }
