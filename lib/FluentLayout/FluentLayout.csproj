@@ -11,4 +11,31 @@
   <ItemGroup>
     <Folder Include="Codegen\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Codegen\VisualElementExtensions.codegen.cs" />
+    <Compile Remove="Codegen\WebViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\SliderExtensions.codegen.cs" />
+    <Compile Remove="Codegen\SpanExtensions.codegen.cs" />
+    <Compile Remove="Codegen\StreamImageSourceExtensions.codegen.cs" />
+    <Compile Remove="Codegen\SwitchExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TabbedPageExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TableViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TemplatedViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\UriImageSourceExtensions.codegen.cs" />
+    <Compile Remove="Codegen\UrlWebViewSourceExtensions.codegen.cs" />
+    <Compile Remove="Codegen\ViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\VisualElementExtensions.codegen.cs" />
+    <Compile Remove="Codegen\WebViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\AbsoluteLayoutExtensions.codegen.cs" />
+    <Compile Remove="Codegen\FileImageSourceExtensions.codegen.cs" />
+    <Compile Remove="Codegen\ActivityIndicatorExtensions.codegen.cs" />
+    <Compile Remove="Codegen\AbsoluteLayoutExtensions.codegen.cs" />
+    <Compile Remove="Codegen\AbsoluteLayoutExtensions.codegen.cs" />
+    <Compile Remove="Codegen\ActivityIndicatorExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TableViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TapGestureRecognizerExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TemplatedPageExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TemplatedViewExtensions.codegen.cs" />
+    <Compile Remove="Codegen\TimePickerExtensions.codegen.cs" />
+  </ItemGroup>
 </Project>

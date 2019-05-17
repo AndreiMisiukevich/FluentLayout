@@ -7,6 +7,246 @@ namespace Xamarin.Forms.Fluent
     public static partial class SliderExtensions
     {
 
+
+        public static TBindable WithSliderValueChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ValueChangedEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.ValueChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderValueChangedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ValueChanged");
+
+            return self;
+        }
+
+        public static TBindable WithSliderChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Slider
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
+
+            return self;
+        }
+
+        public static TBindable WithSliderFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderFocusedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
+
+            return self;
+        }
+
+        public static TBindable WithSliderMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Slider
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
+
+            return self;
+        }
+
+        public static TBindable WithSliderSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Slider
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
+
+            return self;
+        }
+
+        public static TBindable WithSliderUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
+
+            return self;
+        }
+
+        public static TBindable WithSliderBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : Slider
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
+
+            return self;
+        }
+
+        public static TBindable WithSliderFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : Slider
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
+
+            return self;
+        }
+
+        public static TBindable WithSliderChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderChildAddedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
+
+            return self;
+        }
+
+        public static TBindable WithSliderChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithSliderDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
+
+            return self;
+        }
+
+        public static TBindable WithSliderDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Slider
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithSliderPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Slider
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
+
+            return self;
+        }
+
+        public static TBindable WithSliderPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : Slider
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
+
+            return self;
+        }
+
+        public static TBindable WithSliderBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Slider
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
+
+            return self;
+        }
+
+        public static TBindable WithSliderPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : Slider
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearSliderPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : Slider
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
+
+            return self;
+        }
         
         public static TBindable BindMinimumSlider<TBindable>(this TBindable self,
             string path,

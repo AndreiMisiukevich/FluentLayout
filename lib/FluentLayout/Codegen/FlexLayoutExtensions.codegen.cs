@@ -7,6 +7,246 @@ namespace Xamarin.Forms.Fluent
     public static partial class FlexLayoutExtensions
     {
 
+
+        public static TBindable WithFlexLayoutLayoutChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.LayoutChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutLayoutChangedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "LayoutChanged");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutFocusedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : FlexLayout
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutChildAddedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : FlexLayout
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
+
+            return self;
+        }
+
+        public static TBindable WithFlexLayoutPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : FlexLayout
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearFlexLayoutPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : FlexLayout
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
+
+            return self;
+        }
         
         public static TBindable BindDirectionFlexLayout<TBindable>(this TBindable self,
             string path,

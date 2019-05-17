@@ -7,6 +7,246 @@ namespace Xamarin.Forms.Fluent
     public static partial class StepperExtensions
     {
 
+
+        public static TBindable WithStepperValueChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ValueChangedEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.ValueChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperValueChangedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ValueChanged");
+
+            return self;
+        }
+
+        public static TBindable WithStepperChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Stepper
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
+
+            return self;
+        }
+
+        public static TBindable WithStepperFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperFocusedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
+
+            return self;
+        }
+
+        public static TBindable WithStepperMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Stepper
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
+
+            return self;
+        }
+
+        public static TBindable WithStepperSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Stepper
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
+
+            return self;
+        }
+
+        public static TBindable WithStepperUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
+
+            return self;
+        }
+
+        public static TBindable WithStepperBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : Stepper
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
+
+            return self;
+        }
+
+        public static TBindable WithStepperFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : Stepper
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
+
+            return self;
+        }
+
+        public static TBindable WithStepperChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperChildAddedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
+
+            return self;
+        }
+
+        public static TBindable WithStepperChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithStepperDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
+
+            return self;
+        }
+
+        public static TBindable WithStepperDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : Stepper
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithStepperPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Stepper
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
+
+            return self;
+        }
+
+        public static TBindable WithStepperPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : Stepper
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
+
+            return self;
+        }
+
+        public static TBindable WithStepperBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : Stepper
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
+
+            return self;
+        }
+
+        public static TBindable WithStepperPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : Stepper
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearStepperPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : Stepper
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
+
+            return self;
+        }
         
         public static TBindable BindMaximumStepper<TBindable>(this TBindable self,
             string path,

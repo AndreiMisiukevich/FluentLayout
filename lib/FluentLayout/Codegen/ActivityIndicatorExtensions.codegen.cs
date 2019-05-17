@@ -7,6 +7,231 @@ namespace Xamarin.Forms.Fluent
     public static partial class ActivityIndicatorExtensions
     {
 
+
+        public static TBindable WithActivityIndicatorChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorFocusedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorChildAddedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : ActivityIndicator
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
+
+            return self;
+        }
+
+        public static TBindable WithActivityIndicatorPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : ActivityIndicator
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearActivityIndicatorPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : ActivityIndicator
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
+
+            return self;
+        }
         
         public static TBindable BindIsRunningActivityIndicator<TBindable>(this TBindable self,
             string path,

@@ -56,6 +56,25 @@ namespace Xamarin.Forms.Fluent
         public static TBindable {0}<TBindable>(this TBindable bindable, {3} value) where TBindable : BindableObject
             => bindable.Set({2}.{1}, value);";
 
+        private const string WithEventMethodTemplate = @"
+
+        public static TBindable With{1}{0}Event<TBindable>(this TBindable self,
+            {2} handlerAction) where TBindable : {1}
+        {{
+            self.{0} += handlerAction;
+
+            return self;
+        }}";
+
+        private const string ClearEventHandlersMethodTemplate = @"
+
+        public static TBindable Clear{1}{0}Handlers<TBindable>(this TBindable self) where TBindable : {1}
+        {{
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, ""{0}"");
+
+            return self;
+        }}";
+
         public static void Main(string[] args)
         {
             var bindableObjType = typeof(BindableObject);
@@ -65,7 +84,7 @@ namespace Xamarin.Forms.Fluent
             var codegenPath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"../../../../lib/FluentLayout/Codegen/"));
 
             var dir = new DirectoryInfo(codegenPath);
-            foreach(var file in dir.GetFiles())
+            foreach (var file in dir.GetFiles())
             {
                 file.Delete();
             }
@@ -75,9 +94,9 @@ namespace Xamarin.Forms.Fluent
                 .GetTypes()
                 .Where(t => t.IsSubclassOf(bindableObjType) || t == bindableObjType)
                 .Where(t => !t.IsGenericType);
-            
 
-            foreach(var type in formsTypes)
+
+            foreach (var type in formsTypes)
             {
                 var props = type.GetFields(BindingFlags.Static | BindingFlags.Public).Where(p => p.FieldType == bindablePropType);
                 if (!props.Any())
@@ -86,7 +105,10 @@ namespace Xamarin.Forms.Fluent
                 }
                 var typeName = type.Name;
                 var methodsBuilder = new StringBuilder();
-                foreach(var prop in props)
+
+                TryHandleEventHandlers(methodsBuilder, type);
+
+                foreach (var prop in props)
                 {
                     var propertyName = prop.Name.Replace("Property", string.Empty);
                     try
@@ -104,13 +126,13 @@ namespace Xamarin.Forms.Fluent
 
                     var isObsolete = prop.CustomAttributes.Any(x => x.AttributeType == obsoleteType);
 
-                    methodsBuilder.Append(string.Format(type.IsSealed ? SealedClassMethodTemplate : MethodTemplate, 
-                        isObsolete ? prop.Name.Replace("Property", string.Empty) : propertyName, 
-                        typeName, 
-                        prop.Name, 
+                    methodsBuilder.Append(string.Format(type.IsSealed ? SealedClassMethodTemplate : MethodTemplate,
+                        isObsolete ? prop.Name.Replace("Property", string.Empty) : propertyName,
+                        typeName,
+                        prop.Name,
                         isObsolete ? "\n[Obsolete]" : string.Empty));
 
-                    if(methodInfo != null)
+                    if (methodInfo != null)
                     {
                         var paramTypeName = methodInfo.GetParameters().Last().ParameterType.Name;
                         methodsBuilder.Append(string.Format(SetValueMethodTemplate, methodInfo.Name, prop.Name, type.Name, paramTypeName, methodInfo.CustomAttributes.Any(x => x.AttributeType == obsoleteType) ? "\n[Obsolete]" : string.Empty));
@@ -125,6 +147,36 @@ namespace Xamarin.Forms.Fluent
 
             Console.WriteLine($"Ended... {formsTypes.Count()} files were generated");
             Console.ReadLine();
+        }
+
+        private static void TryHandleEventHandlers(StringBuilder methodsBuilder, Type type)
+        {
+            // Can't create generic methods for sealed types (i.e SwipeGestureRecognizer)
+            if (!type.IsSealed &&
+                // Don't try to generate event handlers for anything that is NOT a VisualElement
+                type.IsSubclassOf(typeof(VisualElement)))
+            {
+                var events = type.GetEvents();
+
+                if (events?.Any() == true)
+                {
+                    foreach (var e in events)
+                    {
+                        string eventHandlerType = ToReadableString(e.EventHandlerType);
+
+                        methodsBuilder.Append(string.Format(WithEventMethodTemplate, e.Name, type.Name, eventHandlerType));
+                        methodsBuilder.Append(string.Format(ClearEventHandlersMethodTemplate, e.Name, type.Name));
+                    }
+                }
+            }
+        }
+
+        private static string ToReadableString(Type type)
+        {
+            return type.ToString()
+                .Replace("`1[", "<")
+                .Replace("]", ">")
+                .Replace("+", ".");
         }
     }
 }

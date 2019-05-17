@@ -7,6 +7,321 @@ namespace Xamarin.Forms.Fluent
     public static partial class WebViewExtensions
     {
 
+
+        public static TBindable WithWebViewNavigatedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.WebNavigatedEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Navigated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewNavigatedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Navigated");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewNavigatingEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.WebNavigatingEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Navigating += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewNavigatingHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Navigating");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewEvalRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EvalRequested> handlerAction) where TBindable : WebView
+        {
+            self.EvalRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewEvalRequestedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "EvalRequested");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewEvaluateJavaScriptRequestedEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.Internals.EvaluateJavaScriptDelegate handlerAction) where TBindable : WebView
+        {
+            self.EvaluateJavaScriptRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewEvaluateJavaScriptRequestedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "EvaluateJavaScriptRequested");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewGoBackRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.GoBackRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewGoBackRequestedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "GoBackRequested");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewGoForwardRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.GoForwardRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewGoForwardRequestedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "GoForwardRequested");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewChildrenReorderedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.ChildrenReordered += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewChildrenReorderedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildrenReordered");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewFocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Focused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewFocusedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Focused");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewMeasureInvalidatedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.MeasureInvalidated += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewMeasureInvalidatedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "MeasureInvalidated");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewSizeChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.SizeChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewSizeChangedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "SizeChanged");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewUnfocusedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.FocusEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.Unfocused += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewUnfocusedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "Unfocused");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewBatchCommittedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.Internals.EventArg<Xamarin.Forms.VisualElement>> handlerAction) where TBindable : WebView
+        {
+            self.BatchCommitted += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewBatchCommittedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BatchCommitted");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewFocusChangeRequestedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.VisualElement.FocusRequestArgs> handlerAction) where TBindable : WebView
+        {
+            self.FocusChangeRequested += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewFocusChangeRequestedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "FocusChangeRequested");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewChildAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.ChildAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewChildAddedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildAdded");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewChildRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.ChildRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewChildRemovedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "ChildRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewDescendantAddedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.DescendantAdded += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewDescendantAddedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantAdded");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewDescendantRemovedEvent<TBindable>(this TBindable self,
+            System.EventHandler<Xamarin.Forms.ElementEventArgs> handlerAction) where TBindable : WebView
+        {
+            self.DescendantRemoved += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewDescendantRemovedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "DescendantRemoved");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewPlatformSetEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.PlatformSet += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewPlatformSetHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PlatformSet");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewPropertyChangedEvent<TBindable>(this TBindable self,
+            System.ComponentModel.PropertyChangedEventHandler handlerAction) where TBindable : WebView
+        {
+            self.PropertyChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewPropertyChangedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanged");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewBindingContextChangedEvent<TBindable>(this TBindable self,
+            System.EventHandler handlerAction) where TBindable : WebView
+        {
+            self.BindingContextChanged += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewBindingContextChangedHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "BindingContextChanged");
+
+            return self;
+        }
+
+        public static TBindable WithWebViewPropertyChangingEvent<TBindable>(this TBindable self,
+            Xamarin.Forms.PropertyChangingEventHandler handlerAction) where TBindable : WebView
+        {
+            self.PropertyChanging += handlerAction;
+
+            return self;
+        }
+
+        public static TBindable ClearWebViewPropertyChangingHandlers<TBindable>(this TBindable self) where TBindable : WebView
+        {
+            Xamarin.Forms.Fluent.EventExtensions.ClearEventInvocations(self, "PropertyChanging");
+
+            return self;
+        }
         
         public static TBindable BindSourceWebView<TBindable>(this TBindable self,
             string path,

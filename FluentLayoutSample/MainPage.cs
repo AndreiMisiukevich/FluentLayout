@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.ComponentModel;
+using Xamarin.Forms;
 using Xamarin.Forms.Fluent;
 
 namespace FluentLayoutSample
@@ -9,7 +11,7 @@ namespace FluentLayoutSample
         {
             Content = new AbsoluteLayout().SetChildren(
                 new BoxView
-                { 
+                {
                     Color = Color.Purple
                 }.SetAbsoluteLayout(AbsoluteLayoutFlags.PositionProportional | AbsoluteLayoutFlags.WidthProportional, 0, 1, 1, 80),
 
@@ -22,12 +24,25 @@ namespace FluentLayoutSample
                 new StackLayout().SetChildren(
                     new Button()
                         .BindTextButton(nameof(MainViewModel.ButtonTitle))
-                        .BindCommandButton(nameof(MainViewModel.ClickCommand))
+                        .BindCommandButton(nameof(MainViewModel.ClickCommand)),
+                    new Label
+                    {
+                        // Blue will never appear, as the binding will be triggering the  
+                        // PropertyChanged event handler
+                        BackgroundColor = Color.Blue
+                    }
+                    .BindTextLabel(nameof(MainViewModel.Label))
+                    .WithLabelPropertyChangedEvent(HandlePropertyChangedEvent)
                 ).SetAbsoluteLayout(AbsoluteLayoutFlags.PositionProportional, .5, .5)
-                .BindBackgroundColorVisualElement(nameof(MainViewModel.StackColor))
             );
 
             BindingContext = new MainViewModel();
+        }
+
+        private void HandlePropertyChangedEvent(object sender, PropertyChangedEventArgs e)
+        {
+            var label = sender as Label;
+            label.BackgroundColor = Color.Red;
         }
     }
 }
